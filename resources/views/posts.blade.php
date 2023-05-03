@@ -1,3 +1,5 @@
+<!-- main homepage  -->
+
 <!DOCTYPE html>
 
 <title>My blog</title>
