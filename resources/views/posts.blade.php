@@ -1,27 +1,24 @@
 <!-- main homepage  -->
 
-<!DOCTYPE html>
+@extends ('layout')
 
-<title>My blog</title>
-<link rel="stylesheet" href="/app.css">
-
-
-<body>
+@section('content')
 
     @foreach($posts as $post)
 
-        <article>
-            <h1><a href="/posts/{!!$post -> slug!!}">
-                {!!$post -> title!!}</h1>
-            </a>
-            <div>
+    <article>
+        <h1><a href="/posts/{!!$post -> slug!!}">
+            {!!$post -> title!!}</h1>
+        </a>
+        <div>
 
-                {!!$post -> excerpt!!}
+            {!!$post -> excerpt!!}
 
-            </div>
-        </article>
+        </div>
+    </article>
 
 
 
-       @endforeach
-</body>
+    @endforeach
+
+@endsection
