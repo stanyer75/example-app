@@ -14,4 +14,9 @@ class Post extends Model
     public function getRouteKeyName(){
         return 'slug';
     }
+
+    public function category()
+    {
+        return $this->belongsTo(Category::class);
+    }
 }
