@@ -20,9 +20,9 @@ use Illuminate\Support\Facades\File;
 Route::get('/', function () { 
     // send all the views to the homepage to be displayed with the var posts
     return view('posts', [
-        'posts' => Post::all()
+        'posts' => Post::with('category')->get()
     ]);
-});
+}); 
 
 
 
