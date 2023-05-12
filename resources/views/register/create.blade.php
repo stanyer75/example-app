@@ -26,6 +26,22 @@
                         >
                 </div>
 
+                <div class="mb-6">
+                    <label class="block mb-2 uppercase font-bold text-xs text-gray-700"
+                        for="email">
+
+                        email
+
+                    </label>
+
+                    <input class="border border-gray-400 p-2 w-full"
+                            type="email"
+                            name="email"
+                            id="email"
+                            required
+                        >
+                </div>
+
 
                 <div class="mb-6">
                     <label class="block mb-2 uppercase font-bold text-xs text-gray-700"
@@ -45,7 +61,7 @@
 
                 <div class="mb-6">
                     <label class="block mb-2 uppercase font-bold text-xs text-gray-700"
-                        for="Password">
+                        for="password">
 
                         Password
 
@@ -53,7 +69,7 @@
 
                     <input class="border border-gray-400 p-2 w-full"
                             type="password"
-                            name="Password"
+                            name="password"
                             id="username"
                             required
                         >
@@ -65,7 +81,7 @@
                     >
                         Submit
                     </button>
-
+                </div>
             </form>
         </main>
     </section>
