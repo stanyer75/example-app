@@ -10,4 +10,15 @@ class RegisterController extends Controller
     {
         return view('register.create');
     }
+
+    public function store()
+    {
+
+        request()->validate([
+            'name'=>'required',
+            'username'=> 'required',
+            'email'=>'required|email',
+            'password'=>'required'
+        ]);
+    }
 }
